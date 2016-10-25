@@ -439,17 +439,11 @@ function updatePositions() {
 
   var allMovers = document.getElementsByClassName("mover"),
     allMoversLength = allMovers.length;
-
-  var phases = [],
-    maxPos = 5,
-    i;
-  for (i = 0; i < maxPos; i++) {
-    phases.push(Math.sin(scrollTop + (i % maxPos)) * 100);
-  }
-
-  for (i = 0; i < allMoversLength; i++) {
-    allMovers[i].style.left = allMovers[i].basicLeft + phases[i % 5] + 'px';
-  }
+  
+	for (var e = document.querySelectorAll(".mover"), a = document.body.scrollTop, r = 0; r < e.length; r++) {
+	var n = Math.sin(a / 1250 + r % 5);
+	e[r].style.left = e[r].basicLeft + 100 * n + "px"
+}
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
