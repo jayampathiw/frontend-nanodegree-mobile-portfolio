@@ -19,6 +19,11 @@ https://github.com/jayampathiw/frontend-nanodegree-mobile-portfolio/blob/master/
 4. Minify js
     - perfmatters.js --> http://jscompress.com/
     
+#### Results
+
+PageSpeed Insights: Mobile: 98/100 / Desktop: 98/100
+
+    
     
 ## Cam's Pizzeria
 1. https://github.com/jayampathiw/frontend-nanodegree-mobile-portfolio/blob/master/views/pizza.html
